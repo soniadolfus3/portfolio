@@ -60,9 +60,6 @@ function App() {
 
     if (savedTheme === 'dark' || savedTheme === 'light') {
       setTheme(savedTheme);
-    } else {
-      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-      setTheme(prefersLight ? 'light' : 'dark');
     }
   }, []);
 
